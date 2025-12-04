@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AuctionLot – Visual Mockup</title>
+    <link rel="stylesheet" href="auction.css">
+</head>
+<body>
+
+<!-- GLOBAL NAV: unified user account -->
+<header class="navbar">
+    <div class="navbar-left">
+        <span class="logo">Bid Wave</span>
+        <nav>
+            <a href="#">Browse Lots</a>
+            <a href="#">Categories</a>
+            <a href="#">My Dashboard</a>
+        </nav>
+    </div>
+    <div class="navbar-right">
+        <input type="text" placeholder="Search lots, titles, descriptions…">
+        <button class="btn-small">Search</button>
+        <a href="#" class="link">Login</a>
+        <a href="#" class="link">Register</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Bid. Sell. Keep. All with one account.</h1>
+    <p>
+        Create a single user account to buy and sell items.
+    </p>
+</section>
+
+<!-- Categories (CATEGORY entity) -->
+<section class="section">
+    <h2>Browse by Category</h2>
+    <div class="grid">
+        <div class="pill">Electronics</div>
+        <div class="pill">Home &amp; Garden</div>
+        <div class="pill">Fashion</div>
+        <div class="pill">Collectibles</div>
+        <div class="pill">Art</div>
+        <div class="pill">Other</div>
+    </div>
+</section>
+
+<!-- Active lot (LOT + highest BID) -->
+<section class="section">
+    <h2>Active Lots</h2>
+    <div class="grid">
+
+        <article class="lot-card">
+            <h3>Vintage Camera</h3>
+            <p class="lot-meta">Category: Collectibles • Seller: user_42</p>
+            <p>Start Price: $50.00</p>
+            <p>Current Highest Bid: <strong>$120.00</strong></p>
+            <p>Ends: Dec 12, 2025 · 5:00 PM</p>
+            <p>Status: <span class="badge badge-active">active</span></p>
+            <button class="btn">View Lot</button>
+        </article>
+
+        <article class="lot-card">
+            <h3>Gaming Chair</h3>
+            <p class="lot-meta">Category: Home &amp; Garden • Seller: user_91</p>
+            <p>Start Price: $80.00</p>
+            <p>Current Highest Bid: <strong>$95.00</strong></p>
+            <p>Ends: Dec 15, 2025 · 9:30 PM</p>
+            <p>Status: <span class="badge badge-active">active</span></p>
+            <button class="btn">View Lot</button>
+        </article>
+
+        <article class="lot-card">
+            <h3>Oil Painting</h3>
+            <p class="lot-meta">Category: Art • Seller: user_15</p>
+            <p>Start Price: $200.00</p>
+            <p>Current Highest Bid: <strong>$0.00</strong></p>
+            <p>Ends: Dec 20, 2025 · 1:00 PM</p>
+            <p>Status: <span class="badge badge-active">active</span></p>
+            <button class="btn">View Lot</button>
+        </article>
+
+    </div>
+</section>
+
+<!-- Single lot page (LOT + BID + RATING + TRANSACTION concept) -->
+<section class="section">
+    <h2>Lot Detail</h2>
+    <div class="lot-layout">
+
+        <!-- Lot details -->
+        <div class="lot-left">
+            <h3>Vintage Camera</h3>
+            <p class="lot-meta">
+                Lot ID: 101 • Seller: user_42 • Category: Collectibles
+            </p>
+            <p>
+                Classic 35mm film camera in good condition. Includes strap and carrying case.
+            </p>
+            <ul class="info-list">
+                <li>Start Price: $50.00</li>
+                <li>Reserve Price: $150.00</li>
+                <li>Auction Window: Dec 1, 2025 – Dec 12, 2025</li>
+                <li>Status: <span class="badge badge-active">active</span></li>
+            </ul>
+
+            <h4>Ratings for this Lot</h4>
+            <p>Average Rating: ☆☆☆☆ (4.2 from 5 ratings)</p>
+            <ul class="rating-list">
+                <li>
+                    “Great seller, item as described.” – from user_88 to user_42  
+                    <span class="rating-meta">Rating: 5 · On this lot</span>
+                </li>
+                <li>
+                    “Shipping took a bit long but fine.” – from user_51 to user_42  
+                    <span class="rating-meta">Rating: 4 · On this lot</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Bid and transaction status -->
+        <div class="lot-right">
+            <div class="panel">
+                <h4>Current Bidding</h4>
+                <p>Highest Bid: <strong>$120.00</strong></p>
+                <p>Auction Ends: Dec 12, 2025 · 5:00 PM</p>
+                <input type="number" class="bid-input" placeholder="Enter a bid higher than $120.00">
+                <button class="btn full">Place Bid</button>
+                <p class="hint">
+                    English auction rule: your bid must be greater than the current maximum.
+                </p>
+            </div>
+
+            <div class="panel">
+                <h4>Bid History</h4>
+                <ul class="bid-list">
+                    <li>$120.00 – bidder: user_358 – 2025-12-10 14:30</li>
+                    <li>$110.00 – bidder: user_923 – 2025-12-09 18:02</li>
+                    <li>$100.00 – bidder: user_001 – 2025-12-09 10:15</li>
+                </ul>
+            </div>
+
+            <div class="panel">
+                <h4>Transaction Status</h4>
+                <p>Final Amount: $155.00</p>
+                <p>Payment Status: <span class="badge badge-complete">completed</span></p>
+                <p>Shipping Status: <span class="badge badge-ship">shipped</span></p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- User dashboard -->
+<section class="section">
+    <h2>My Dashboard</h2>
+    <div class="dashboard">
+
+        <!-- Addresses (ADDRESS entity, multiple, primary) -->
+        <div class="dash-card">
+            <h3>Addresses</h3>
+            <ul class="info-list">
+                <li>
+                    123 Main St, Pittsburgh, PA 15213, USA  
+                    <span class="badge badge-primary">Primary</span>
+                </li>
+                <li>45 Oak Dr, Pittsburgh, PA 19103, USA</li>
+            </ul>
+            <button class="btn-small">Add Address</button>
+        </div>
+
+        <!-- Billing  -->
+        <div class="dash-card">
+            <h3>Billing Methods</h3>
+            <ul class="info-list">
+                <li>
+                    credit_card • **** 2910 • John Smith  
+                    <span class="badge badge-primary">Primary</span>
+                </li>
+                <li>paypal • payment_token_xyz</li>
+            </ul>
+            <button class="btn-small">Add Billing Method</button>
+        </div>
+
+        <!-- Lots user is selling -->
+        <div class="dash-card">
+            <h3>My Lots</h3>
+            <ul class="info-list">
+                <li>Lot 101 – Vintage Camera – <span class="badge badge-active">active</span></li>
+                <li>Lot 77 – Guitar – <span class="badge badge-sold">sold</span></li>
+            </ul>
+            <button class="btn-small">Create New Lot</button>
+        </div>
+
+        <!-- Bids user has placed -->
+        <div class="dash-card">
+            <h3>My Bids</h3>
+            <ul class="info-list">
+                <li>Lot 101 – Highest bidder at $120.00</li>
+                <li>Lot 89 – Outbid (current: $210.00)</li>
+            </ul>
+        </div>
+
+        <!-- Transactions -->
+        <div class="dash-card">
+            <h3>My Transactions</h3>
+            <ul class="info-list">
+                <li>
+                    Lot 77 – Guitar – $250.00  
+                    <span class="rating-meta">Payment: completed · Shipping: delivered</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Ratings -->
+        <div class="dash-card">
+            <h3>Ratings</h3>
+            <p><strong>Ratings Given</strong></p>
+            <ul class="info-list">
+                <li>Lot 22 – to user_15 – 5 ★ – “Great communication.”</li>
+            </ul>
+            <p><strong>Ratings Received</strong></p>
+            <ul class="info-list">
+                <li>Lot 77 – from user_09 – 4 ★ – “Item matched description.”</li>
+            </ul>
+        </div>
+
+        <!-- Admin tools -->
+        <div class="dash-card">
+            <h3>Admin Tools (for admin users)</h3>
+            <ul class="info-list">
+                <li>Search user by username/email</li>
+                <li>Mark user as banned / unbanned</li>
+            </ul>
+            <button class="btn-small">Open Admin Console</button>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2025 Bid Wave · Online Auction · Vivien Lin, Jason Xie, Meghna Ravi </p>
+</footer>
+
+</body>
+</html>
