@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bid Wave – Admin Console</title>
+    <link rel="stylesheet" href="auction.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="navbar-left">
+        <span class="logo">Bid Wave</span>
+        <nav>
+            <a href="index.html">Browse Lots</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="buyer.html">Buyer Dashboard</a>
+            <a href="seller.html">Seller Dashboard</a>
+            <a href="admin.html">Admin Console</a>
+        </nav>
+    </div>
+    <div class="navbar-right">
+        <input type="text" placeholder="Search lots, titles, descriptions…">
+        <button class="btn-small">Search</button>
+        <a href="login.html" class="link">Login</a>
+        <a href="register.html" class="link">Register</a>
+    </div>
+</header>
+    <div class="login-container">
+        <h2>Create Auction Account</h2>
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            
+            <button type="submit">Register Account</button>
+            <p class="error-message" id="registerError"></p>
+        </form>
+        <p class="signup-link">
+            Already registered? <a href="index.html">Log In</a>
+        </p>
+    </div>
+
+<footer class="footer">
+    <p>© 2025 Bid Wave · Online Auction</p>
+</footer>
+
+</body>
+</html>
