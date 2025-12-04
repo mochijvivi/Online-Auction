@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bid Wave – Lot Detail</title>
+    <link rel="stylesheet" href="auction.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="navbar-left">
+        <span class="logo">Bid Wave</span>
+        <nav>
+            <a href="index.html">Browse Lots</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="buyer.html">Buyer Dashboard</a>
+            <a href="seller.html">Seller Dashboard</a>
+            <a href="admin.html">Admin Console</a>
+        </nav>
+    </div>
+    <div class="navbar-right">
+        <input type="text" placeholder="Search lots, titles, descriptions…">
+        <button class="btn-small">Search</button>
+        <a href="#" class="link">Login</a>
+        <a href="#" class="link">Register</a>
+    </div>
+</header>
+
+<section class="section">
+    <h2>Lot Detail</h2>
+    <div class="lot-layout">
+
+        <!-- Lot details -->
+        <div class="lot-left">
+            <h3>Vintage Camera</h3>
+            <p class="lot-meta">
+                Lot ID: 101 • Seller: user_42 • Category: Collectibles
+            </p>
+            <p>
+                Classic 35mm film camera in good condition. Includes strap and carrying case.
+            </p>
+            <ul class="info-list">
+                <li>Start Price: $50.00</li>
+                <li>Reserve Price: $150.00</li>
+                <li>Auction Window: Dec 1, 2025 – Dec 12, 2025</li>
+                <li>Status: <span class="badge badge-active">active</span></li>
+            </ul>
+
+            <h4>Ratings for this Lot</h4>
+            <p>Average Rating: ☆☆☆☆ (4.2 from 5 ratings)</p>
+            <ul class="rating-list">
+                <li>
+                    “Great seller, item as described.” – from user_88 to user_42  
+                    <span class="rating-meta">Rating: 5 · On this lot</span>
+                </li>
+                <li>
+                    “Shipping took a bit long but fine.” – from user_51 to user_42  
+                    <span class="rating-meta">Rating: 4 · On this lot</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Bid and transaction status -->
+        <div class="lot-right">
+            <div class="panel">
+                <h4>Current Bidding</h4>
+                <p>Highest Bid: <strong>$120.00</strong></p>
+                <p>Auction Ends: Dec 12, 2025 · 5:00 PM</p>
+                <input type="number" class="bid-input" placeholder="Enter a bid higher than $120.00">
+                <button class="btn full">Place Bid</button>
+                <p class="hint">
+                    English auction rule: your bid must be greater than the current maximum.
+                </p>
+            </div>
+
+            <div class="panel">
+                <h4>Bid History</h4>
+                <ul class="bid-list">
+                    <li>$120.00 – bidder: user_358 – 2025-12-10 14:30</li>
+                    <li>$110.00 – bidder: user_923 – 2025-12-09 18:02</li>
+                    <li>$100.00 – bidder: user_001 – 2025-12-09 10:15</li>
+                </ul>
+            </div>
+
+            <div class="panel">
+                <h4>Transaction Status</h4>
+                <p>Final Amount: $155.00</p>
+                <p>Payment Status: <span class="badge badge-complete">completed</span></p>
+                <p>Shipping Status: <span class="badge badge-ship">shipped</span></p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2025 Bid Wave · Online Auction</p>
+</footer>
+
+</body>
+</html>
